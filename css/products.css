@@ -1,0 +1,434 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+ul,ol{
+	list-style: none;
+}
+span{
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float:right;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.clearfix{
+	zoom: 1;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+	color:black;
+	display: block;
+}
+.container{
+	width:1200px;
+	margin: 0 auto;
+}
+
+/* 头部 */
+.header{
+    width:1200px;
+	/* height: 100px; */
+	background: white;
+    box-sizing: border-box;
+	padding-top: 27px;
+	border-top:4px solid #D9232E ;
+    position: relative;
+}
+.header .nav{
+	position: relative;
+}
+.nav .nav_top{
+	width: 102px;
+	padding-right: 2px;
+}
+.nav_top .language{
+	width: 73px;
+	height: 18px;
+	padding-bottom: 6px; 
+	border-bottom: 1px solid #ccc;
+	line-height: 25px;
+	position: relative;
+}
+.language span{
+	font-size: 12px;
+	color: #666;
+	padding-left: 12px;
+}
+.language img{
+	position: absolute;
+	top: 7px;
+	right: 0px;
+	width: 8px;
+    height: 5px;
+}
+.nav_top .search{
+	margin-top:7px ;
+	cursor: pointer;/* 小手 */
+	width: 12px;
+	height: 13px;
+	background:url(../images/garysearch.png) no-repeat center center;
+	outline: none;/* input点击时,默认的蓝框去除掉 */
+	border: 0;/* 边框去除 */
+}
+.header .nav ul {
+	width: auto;
+	height: 44px;
+    margin-top: 56px;
+}
+.header .nav ul li{
+    float: left;
+    margin-right: 53px;
+    padding-bottom: 20px;
+}
+.header .nav ul li:last-child {
+    margin-right: 0;
+}
+.header .nav ul li a{
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+}
+.header .nav .con a{
+	font-size: 16px;
+	color: #d10709;
+}
+.header .nav ul li a:hover{
+	color: #d10709;
+}
+/* .header .nav .con{
+	border-bottom: 3px solid #d10709;
+} */
+.header .nav #nline{
+	display: block;
+	width: 32px;
+	height: 3px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 4;
+	background: #d10709;
+	margin-bottom: 1px;
+}
+.header .nav #hide{
+	position: relative;
+}
+.nav #hide>ol{
+	display: block;
+	width: 172px;
+	float: none;
+    position: absolute;
+    top: 20px;
+    left: -67px;
+	z-index: 4;
+	background: #fff;
+	display: none; 
+}
+.nav #hide:hover>ol{
+	display: block;
+}
+/* .nav .show>ol{
+	display: none;
+}
+.nav .show:hover>ol{
+	display: block;
+} */
+.nav #hide>ol li{
+	width: 172px;
+	height: 19px;
+	overflow: hidden;
+}
+.nav #hide>ol li a{
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	line-height: 42px;
+	display: block;
+	font-size: 14px;
+	color: #333;
+}
+.nav #hide>ol li a:hover{
+	background: #D9232E;
+	color: #fff;
+}
+.nav #hide>ol li:first-child{
+	/* background: blue; */
+	width: 100%;
+	height: 80%;
+}
+
+/* 内容导航栏 */
+.pd_nav{
+	width: 100%;
+	height: 88px;
+    border-top: 1px solid #ccc;
+    padding-top: 38px;
+    display: flex;
+}
+.pd_nav a{
+	width: 12.5%;
+	height: 88px;
+	float: left;
+	text-align: center;
+}
+.pd_nav a:hover{
+	color: #d10709;
+}
+.pd_nav a:hover:after{
+	content: "";
+	display: block;
+	width: 21px;
+	height: 3px;
+	background: #d10709;
+	margin: 24px auto 0px;
+}
+.pd_nav p{
+	width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    color: #666;
+    margin-top: 15px;
+}
+.bgimg{
+	width: 100%;
+	height: 500px;
+	box-sizing: border-box;
+}
+
+/* 主推抱枕公仔 */
+.mainpush{
+    width: 100%;
+    margin: 20px 0;	
+}
+ .mainpush .mp_left{
+	 width: 589px;
+	 height: 591px;
+	 overflow: hidden;
+ }
+ .mainpush .mp_right{
+	width: 589px;
+	height: 591px;
+	background: pink;
+	overflow: hidden;
+ }
+.mainpush a{
+	display: block;
+	position: relative;
+}
+ .mainpush .mpbg{
+	width: 588px;
+	height: 590px;
+ }
+.mainpush .mpbg:hover{
+	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+	transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.mainpush .mp_txt{
+    width: 211px;
+    position: absolute;
+    top: 80px;
+    right: 64px;
+}
+.mainpush .mptitle{
+	width: 211px;
+	font-size: 30px;
+	color: #000;
+	white-space: nowrap;/* 规定段落中的文本不进行换行： */
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: center;
+}
+.mainpush .mpthems{
+	width: 201px;
+    height: 40px;
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+/* 香薰机 */
+.aromatherapy_machine{
+	width: 1200px;
+	background: #f9f9f9;
+	padding: 91px 0 109px;
+}
+.aromatherapy_machine .amcontebt{
+	height: 396px;
+	overflow: hidden;
+}
+.aromatherapy_machine .am_left{
+	width: 596px;
+	height: 396px;
+ }
+.am_left a .img{
+	width: 596px;
+	height: 396px;
+}
+.am_left a .img:hover{
+ 	transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+ 	transition: all 0.3s linear;
+     -webkit-transition: all 0.3s linear;
+ }
+.aromatherapy_machine .am_right{
+	width: 326px;
+	margin-left: 37px;
+	margin-top: 72px;
+}
+.am_right a{
+	display: block;
+    width: 326px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    color: #000;
+}
+.am_right p{
+	width: 326px;
+    height: 95px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+.am_right .more a{
+	display:block;
+	width: 178px;
+    height: 45px;
+	background:url(../images/graylink.png) no-repeat center center;	
+}
+.am_right .more a:hover{
+	background:url(../images/whitearrow.png) no-repeat center center;
+	color: white;
+}
+.aromatherapy_machine .am_line{
+	width: 1000px;
+	margin: 56px auto 0;/* 居中这个小div,底下的边框正好当成一个小的高就是边了 */
+	border-top: 1px solid #e0e0e0;
+}
+
+/* 产品视频 */
+.product_video{
+	width: 100%;
+	margin-top: 20px;
+}
+.product_video .pv_left{
+	position: relative;
+}
+.pv_left .video{
+	width: 94px;
+	height: 94px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin:-47px auto 0;/* position到这里的部分都是居中显示,margin: -47px auto 0 上移自身高度的一半,auto左右与上面的0,0可以左右居中,0下面不做设置; */
+	opacity: 0.7;
+}
+.pv_left .video:hover{
+	opacity: 1;
+}
+.product_video .pv_right{
+	width: 600px;
+	height: 376px;
+	background-color: #d9232e;
+	padding: 56px 0 0 71px;
+	box-sizing: border-box;
+}
+.pv_right .title{
+	font-size: 36px;
+    color: #fff;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;	
+	font-weight: 500;
+}
+.pv_right .title:hover{
+	color: #095F8A;
+}
+.pv_right .subtitle{
+	margin: 20px 0 40px;
+	font-size: 36px;
+    color: #fff;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block; 	
+}
+.pv_right .subtitle:hover{
+	color: #095F8A;
+}
+.pv_right .pvthems{
+	width: 449px;
+    height: 48px;
+    font-size: 14px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 24px;	
+}
+.pv_right .more a{
+	display:block;
+	width: 178px;
+	height: 45px;
+    border: 1px solid #fff;
+    margin-top: 20px;
+	background:url(../images/whitearrow.png) no-repeat center center;
+}
+.pv_right .more a:hover{
+	border: 1px solid #797979;
+	background:url(../images/graylink.png) no-repeat center center;	
+
+}
+
+/* 页脚 */
+.footer{
+	width: 100%;
+    margin-top: 100px;
+    border-top: 2px solid #000;
+    padding: 38px 0 70px;
+}
+.footer .f_txt{
+	width: 100%;
+    font-size: 14px;
+    color: #666;
+}
+.topfixed{
+	width: 48px;
+    height: 48px;
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    top: 50%;
+    margin-top: -35px;
+    /* display: none; */
+	background: #000;
+	display: none
+}
+.topfixed:hover{
+	background: #d9232e;
+}
+.topfixed img{
+	width: 30px;
+    display: block;
+    margin: 14px auto 0;
+}

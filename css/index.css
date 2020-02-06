@@ -1,0 +1,562 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+ul,ol{
+	list-style: none;
+}
+span{
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float:right;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.clearfix{
+	zoom: 1;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+	color:black;
+	display: block;
+}
+.container{
+	width:1200px;
+	margin: 0 auto;
+}
+
+/* 头部 */
+.header{
+    width:1200px;
+	/* height: 100px; */
+	background: white;
+    box-sizing: border-box;
+	padding-top: 27px;
+	border-top:4px solid #D9232E ;
+    position: relative;
+}
+.header .nav{
+	position: relative;
+}
+.nav .nav_top{
+	width: 102px;
+	padding-right: 2px;
+}
+.nav_top .language{
+	width: 73px;
+	height: 18px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	line-height: 25px;
+	position: relative;
+}
+.language span{
+	font-size: 12px;
+	color: #666;
+	padding-left: 12px;
+}
+.language img{
+	position: absolute;
+	top: 7px;
+	right: 0px;
+	width: 8px;
+    height: 5px;
+}
+.nav_top .search{
+	margin-top:7px ;
+	cursor: pointer;/* 小手 */
+	width: 12px;
+	height: 13px;
+	background:url(../images/garysearch.png) no-repeat center center;
+	outline: none;/* input点击时,默认的蓝框去除掉 */
+	border: 0;/* 边框去除 */
+}
+.header .nav ul {
+	width: auto;
+	height: 44px;
+    margin-top: 56px;
+}
+.header .nav ul li{ 
+    float: left;
+    margin-right: 53px;
+	padding-bottom: 20px;
+}
+.header .nav ul li:last-child {
+    margin-right: 0;
+}
+.header .nav ul li a{
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+}
+.header .nav .con a{
+	font-size: 16px;
+	color: #d10709;
+}
+.header .nav ul li a:hover{
+	color: #d10709;
+}
+/* .header .nav .con{
+	border-bottom: 3px solid #d10709;
+} */
+.header .nav #nline{
+	display: block;
+	width: 32px;
+	height: 3px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 4;
+	background: #d10709;
+	margin-bottom: 1px;
+}
+.header .nav #hide{
+	position: relative;
+}
+.nav #hide>ol{
+	display: block;
+	width: 172px;
+	float: none;
+    position: absolute;
+    top: 20px;
+    left: -67px;
+	z-index: 4;
+	background: #fff;
+	display: none; 
+}
+.nav #hide:hover>ol{
+	display: block;
+}
+/* .nav .show>ol{
+	display: none;
+}
+.nav .show:hover>ol{
+	display: block;
+} */
+.nav #hide>ol li{
+	width: 172px;
+	height: 19px;
+	overflow: hidden;
+}
+.nav #hide>ol li a{
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	line-height: 42px;
+	display: block;
+	font-size: 14px;
+	color: #333;
+}
+.nav #hide>ol li a:hover{
+	background: #D9232E;
+	color: #fff;
+}
+.nav #hide>ol li:first-child{
+	/* background: blue; */
+	width: 100%;
+	height: 80%;
+}
+
+/* slide 轮播图 */
+.slide{
+	width: 1200px;
+	height: 700px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden; /* 轮播图需要  这也会把我的ol标签给挡住,在定位ol li时把这注释掉*/
+}
+.slide ul{
+	width: 8500px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.slide ul li{
+	float: left;
+	background: #000000;
+}
+.slide ol{
+	height: 26px;
+	position: absolute;
+	bottom: 30px;
+    left: 50%;
+	margin-left: -143px;
+}
+.slide ol li{
+	float: left;
+	width: 8px;
+	height: 8px;
+	background: #fff;
+    border-radius: 50%;
+	cursor: pointer;
+	margin: 9px 30px 0px 0px;
+}
+.slide ol li.con{
+	background: #d9232e;
+	border: 10px solid #da958e;
+	border-radius: 50%;
+	margin: 0 30px -6px 0;  /* 这样可以使得与不是con的小圆点在一条线上 */ 
+}
+.slide .r_line{
+	width: 22px;
+    border-top: 1px dashed #fff;
+    margin-left: -34px;
+    margin-top: 4px;
+}
+
+/* 品牌简介 */
+.brand-introduction{
+	min-width: 1200px;
+	padding-top: 25px;
+	height: 700px;
+}
+.ct_left{
+    width: 600px;
+	height: 700px;
+    display: block;
+	background:url(../images/brandconcept.jpg) no-repeat center center;
+}
+.ct_left .title{
+    font-size: 48px;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+	padding: 48px 47px 0 0;
+}
+.ct_left:hover .title{
+	color: #D10709;
+}
+.ctr_top{
+	width: 580px;
+	height: 340px;
+	border: solid 1px #d4d4d4;
+	box-sizing: border-box;
+}
+.ctr_top .title{
+	font-size: 48px;
+	color: #222;
+	width: 100%;
+	text-align: center;
+	margin-top: 76px;
+}
+.ctr_top .ctrt_txt{
+	width: 292px;
+    margin: 19px auto 38px;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    height: 44px;
+    overflow: hidden;
+}
+.ctr_top .more{
+	display:block;
+	width: 178px;
+    height: 45px;
+	margin: 0 auto;
+	background:url(../images/graylink.png) no-repeat center center;
+}
+.ctr_top .more:hover{
+	background:url(../images/whitearrow.png) no-repeat center center;
+}
+.ct_right .ctr_bottom{
+	width: 580px;
+	height: 340px;
+    margin: 0 auto;
+	padding-top:20px ;
+
+}
+.ctr_bottom a{
+	width: 580px;
+	height: 340px;
+	position: relative;
+	background: url(../images/distributor.jpg)no-repeat center center;
+}
+.ctr_bottom a p{
+	width: 300px;
+	height: 80px;
+	line-height: 80px; 
+	font-size: 48px;
+	color: #fff;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 50%;
+	margin: -40px auto;
+}
+.ctr_bottom:hover a p{
+	color: #D10709;
+	border-top: 3px solid #D10709;
+	border-bottom: 3px solid #D10709;
+}
+
+/* 优选好品 */
+.preferred-product{
+	margin-top: 79px;
+	text-align: center;
+    width: 100%;
+	/* background:lightpink; */
+}
+.preferred-product .p_title{
+	font-size: 36px;
+	color: #222;
+	font-weight: bold;
+}
+.p_title:before{
+	content: "";
+	display: inline-block;
+	width: 43px;
+	height: 1px;
+	background: #ccc;
+	vertical-align: middle;/*中间*/
+	margin-right: 20px;
+}
+.p_title:after{
+	content: "";
+	display: inline-block;
+	width: 43px;
+	height: 1px;
+	background: #ccc;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.preferred-product .p_navlist{
+	width: 1200px;
+	height: 87px;
+	border-bottom: 1px solid #ccc;
+	margin-top: 40px;
+	overflow: hidden;
+	/* background: skyblue; */
+	margin-top: 40px;
+}
+.p_navlist a{
+	width: 14.28%;
+	height: 87px;
+	float: left;
+	text-align: center;
+}
+.p_navlist img{
+	height: 23px;
+}
+.p_navlist p{
+	width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    color: #666;
+	margin-top: 15px;
+}
+.p_navlist p:after{
+	content: "";
+	display: block;
+	width: 21px;
+	height: 3px;
+	background: #d10709;
+	margin: 24px auto 0px;
+	display: none;
+}
+/* .p_navlist a.icon p{
+	color: #d10709;
+} */
+/* .p_navlist .icon p:after{
+	content: "";
+	display: block;
+	width: 21px;
+	height: 3px;
+	background: #d10709;
+	margin: 24px auto 0px;	
+} */
+/* a:hover p 就算移动到a时改变p的样式*/
+
+.p_navlist a:hover p{
+	color: #d10709;
+}
+.p_navlist a:hover p:after{
+	display: block;
+}
+  .red-img{
+	display: none;
+  }
+  .p_navlist .col>a:hover .gray-img{
+	display: none;
+  }
+  .p_navlist .col>a:hover .red-img{
+	display: block;
+  }
+  .p_navlist .col>:hover p{
+	color: #d10709;
+  }
+  
+.preferred-product .p_productlist{
+	background:white;
+	padding-top: 28px;
+}
+.p_productlist ul li{
+	display: block;
+	width: 25%;
+	float: left;
+}
+.p_productlist ul li img{
+	max-width:235px;
+    max-height:236px;
+	text-align: center;
+}
+.p_productlist ul li img:hover{
+	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.p_productlist ul li h3{
+	font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-top: 17px;
+}
+.p_productlist ul li h3:hover{
+	color: #D10709;
+}
+.p_productlist ul li p{
+	width: 143px;
+	height: 44px;
+	font-size: 14px;
+	color: #666;
+	line-height: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis;/* text-overflow:ellipsis与text-overflow:clip包含无法在框中容纳的长文本*/
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 34px;
+}
+
+/* 新闻中心 */
+.news-center{
+	margin-top: 78px;
+	text-align: center;
+	width: 100%;
+/* 	background:lightpink; */
+}
+.news-center .p_title{
+	font-size: 36px;
+	color: #222;
+	font-weight: bold;
+}
+.p_title:before{
+	content: "";
+	display: inline-block;
+	width: 43px;
+	height: 1px;
+	background: #ccc;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.p_title:after{
+	content: "";
+	display: inline-block;
+	width: 43px;
+	height: 1px;
+	background: #ccc;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.news-center .newslist{
+	width: 1200px;
+    height: 424px;
+    overflow: hidden;
+    margin-top: 35px;
+}
+.newslist ul li{
+	display: block;
+	width: 33.334%;
+	float: left;
+	background: white;
+}
+.newslist ul li a{
+	display: inline-block;
+	width: 380px;
+}
+.newslist ul li img{
+	max-width:380px;
+    max-height:214px;
+	text-align: center;
+}
+.newslist ul li h3{
+	width: 359px;
+	height: 32px;
+    font-size: 18px;
+    color: #333;
+    line-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;/* 与上面的一起可以限定框内的内容填满时以...代替 */
+	text-align: left;
+	margin: 14px 0px 8px;
+}
+.newslist ul li h3:hover{
+	color: #D10709;
+}
+.newslist ul li p{
+   width: 344px;
+    height: 76px;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	text-align: left;
+}
+.news-center .more{
+	display: block;
+    width: 178px;
+    height: 45px;
+    margin: 0 auto;
+    cursor: pointer;
+	background:url(../images/graylink.png) no-repeat center center;
+}
+.news-center .more:hover{
+	background:url(../images/whitearrow.png) no-repeat center center;
+}
+
+/* 页脚 */
+.footer{
+	width: 100%;
+    margin-top: 100px;
+    border-top: 2px solid #000;
+    padding: 38px 0 70px;
+}
+.footer .f_txt{
+	width: 100%;
+    font-size: 14px;
+    color: #666;
+}
+.topfixed{
+	width: 48px;
+    height: 48px;
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    top: 50%;
+    margin-top: -35px;
+    /* display: none; */
+	background: #000;
+	display: none
+}
+.topfixed:hover{
+	background: #d9232e;
+}
+.topfixed img{
+	width: 30px;
+    display: block;
+    margin: 14px auto 0;
+}

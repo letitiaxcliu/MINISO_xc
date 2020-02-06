@@ -1,0 +1,563 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+ul,ol{
+	list-style: none;
+}
+span{
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float:right;
+}
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.clear{
+	zoom: 1;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+	color:black;
+	display: block;
+}
+.container{
+	width:1200px;
+	margin: 0 auto;
+}
+
+/* 头部 */
+.header{
+    width:1200px;
+	/* height: 100px; */
+	background: white;
+    box-sizing: border-box;
+	padding-top: 27px;
+	border-top:4px solid #D9232E ;
+    position: relative;
+}
+.header .nav{
+	position: relative;
+}
+.nav .nav_top{
+	width: 102px;
+	padding-right: 2px;
+}
+.nav_top .language{
+	width: 73px;
+	height: 18px;
+	padding-bottom: 6px; 
+	border-bottom: 1px solid #ccc;
+	line-height: 25px;
+	position: relative;
+}
+.language span{
+	font-size: 12px;
+	color: #666;
+	padding-left: 12px;
+}
+.language img{
+	position: absolute;
+	top: 7px;
+	right: 0px;
+	width: 8px;
+    height: 5px;
+}
+.nav_top .search{
+	margin-top:7px ;
+	cursor: pointer;/* 小手 */
+	width: 12px;
+	height: 13px;
+	background:url(../images/garysearch.png) no-repeat center center;
+	outline: none;/* input点击时,默认的蓝框去除掉 */
+	border: 0;/* 边框去除 */
+}
+.header .nav ul {
+	width: auto;
+	height: 44px;
+    margin-top: 56px;
+}
+.header .nav ul li{
+    float: left;
+    margin-right: 53px;
+    padding-bottom: 20px;
+}
+.header .nav ul li:last-child {
+    margin-right: 0;
+}
+.header .nav ul li a{
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+}
+.header .nav .con a{
+	font-size: 16px;
+	color: #d10709;
+}
+.header .nav ul li a:hover{
+	color: #d10709;
+}
+.header .nav #nline{
+	display: block;
+	width: 32px;
+	height: 3px;
+	position: absolute;
+	bottom: 0px;
+	left: 86px;
+	z-index: 4;
+	background: #d10709;
+	margin-bottom: 1px;
+}
+.header .nav #hide{
+	position: relative;
+}
+.nav #hide>ol{
+	display: block;
+	width: 172px;
+	float: none;
+    position: absolute;
+    top: 20px;
+    left: -67px;
+	z-index: 4;
+	background: #fff;
+	display: none; 
+}
+.nav #hide:hover>ol{
+	display: block;
+}
+/* .nav .show>ol{
+	display: none;
+}
+.nav .show:hover>ol{
+	display: block;
+} */
+.nav #hide>ol li{
+	width: 172px;
+	height: 19px;
+	overflow: hidden;
+}
+.nav #hide>ol li a{
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	line-height: 42px;
+	display: block;
+	font-size: 14px;
+	color: #333;
+}
+.nav #hide>ol li a:hover{
+	background: #D9232E;
+	color: #fff;
+}
+.nav #hide>ol li:first-child{
+	/* background: blue; */
+	width: 100%;
+	height: 80%;
+}
+
+/* 品牌介绍 */
+.introduction{
+	width: 100%;
+	padding: 83px 0 82px;
+	background:url(../images/brandbibg.png) no-repeat center 83px;
+	background-color: #f9f5f5;
+	background-size: 446px 446px;
+}
+.bgtitle{
+	width: 100%;
+	font-size: 36px;
+	color: #ddd;
+	text-align: center;
+	font-family: 微软雅黑;
+	padding: 28px;
+	font-weight: 500;
+	padding-left: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.title{
+	font-size: 36px;
+	color: #000;
+	text-align: center
+}
+.introduction .ind_txt{
+	width: 715px;
+	overflow: hidden;
+	font-size: 14px;
+	color: #666;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+.ind_txt .txt{
+	width: 100%;
+	height: 54px;
+	margin: 34px auto 26px;
+}
+.ind_txt .text{
+	width: 100%;
+    height: 84px;
+    margin: 0 auto 48px;
+}
+.introduction .more{
+	display:block;
+	width: 178px;
+    height: 45px;
+	margin: 0 auto;
+	background:url(../images/graylink.png) no-repeat center center;
+}
+.introduction .more:hover{
+	background:url(../images/whitearrow.png) no-repeat center center;
+	color: white;
+}
+
+/* 联合创始人 */
+.founders{
+	width: 100%;
+	height: 550px;
+}
+.founders .fd_left{
+	width: 50%;
+	box-sizing: border-box;
+}
+.founders .fd_right{
+	width: 50%;
+	height: 550px;
+    background-color: #d9232e;
+	position: relative;
+}
+.fd_right .fd_txt{
+	width: 520px;
+	padding:39px 0px 47px 0px;
+}
+.fd_txt h1{
+	font-size: 36px;
+    color: #fff;
+	font-weight: 500;
+}
+.fd_txt h4{
+    margin: 40px 0 20px;
+    font-size: 18px;
+    color: #fff;
+	font-weight: 500;
+}
+.fd_txt p{
+	width: 88%;/* 这也是一个不错的控制间距的方法 */
+	height: 64px;
+	font-size: 14px;
+    color: #fff;
+    overflow: hidden;
+    line-height: 23px;
+}
+.founders .more{
+	width: 178px;
+    height: 45px;
+	margin: 0 auto;
+	position: absolute;
+	bottom:29px;
+	left:80px;
+	border: 1px solid #fff;
+	background:url(../images/whitearrow.png) no-repeat center center;
+}
+.founders .more:hover{
+	background:url(../images/graylink.png) no-repeat center center;
+	border: 1px solid #D5D5D5;
+}
+
+/* 发展历程 */
+.development{
+	width: 100%;
+	margin-top: 100px;
+}
+.development .dl_list{
+	width: 1200px;
+}
+.dl_list .dl_left{
+    width: 22%;
+    height: 437px;
+    border-right: 1px dashed #d6d6d6;
+    overflow-y: auto;
+}
+.dl_left ul li{
+	display: inline-block;
+	width: 178px;
+	height: 45px;
+	border: solid 1px #d6d6d6;
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #999;
+	text-align: center;
+	line-height: 45px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.dl_left ul li:hover{
+	background-color: #d9232e;
+    border:none;
+    color: #fff;
+}
+.dl_list .dl_right{
+	width: 76%;
+	height: 437px;
+	padding-left: 83px;
+	box-sizing: border-box;
+	font-family: 宋体;
+	font-weight: 400;
+} 
+.dl_right .year{
+	width: 104px;
+	color: #d9232e;
+	text-align: left;
+	font-weight: 100;
+	padding-top:10px ;
+}
+.year h1{
+	white-space: nowrap;
+    font-size: 48px;
+}
+.year p{
+	font-size: 24px;
+	padding-top: 10px;
+	font-family:微软雅黑;
+	font-weight: 400;
+}
+.dl_right .detail{
+	width: 690px;
+	margin-left: 59px;
+	margin-top: -100px;
+    height: 324px;
+    overflow: hidden;
+}
+.detail h5{
+	margin: 0px;
+	padding: 0px;
+	word-break: break-word;
+	width: 173px;
+	float: left;
+	font-size: 14px;
+	color: rgb(102, 102, 102);
+	line-height: 36px;
+	text-align: left; 
+}
+.detail p{
+	margin: 0px;
+	padding: 0px;
+	word-break: break-word;
+	width: 776px;
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 14px;
+	color: rgb(102, 102, 102);
+	line-height: 36px;
+	text-align: left;
+}
+.development .more{
+	width: 178px;
+    height: 45px;
+	margin-left: 140px;
+	margin-top:390px ;
+	background:url(../images/graylink.png) no-repeat center center;
+}
+.development .more:hover{
+	background:url(../images/whitearrow.png) no-repeat center center;
+}
+
+/* 设计师团队 */
+.designerteam{
+	width: 100%;
+	margin-top: 100px;
+	position: relative;
+}
+.designerteam .title{
+	font-size: 36px;
+    width: 100%;
+	color: #000;
+	margin: 10px 0 29px;
+}
+.designerteam .dt_toptxt{
+	width: 671px;
+	height: 45px;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+	line-height: 24px;
+	margin: 0 auto 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.designerteam .desingers{
+	width: 1004px;
+	height:336px ;
+	overflow: hidden;
+	background: #f8f8f8;
+	position: relative;
+	margin: 0 auto;
+}
+.desingers ul{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2010px;
+}
+.desingers ul li{
+	float: left;
+}
+.desingers img{
+	width: 251px;
+	height: 251px;
+}
+.desingers ul li img:hover{
+	transform: scale(1.1);
+	transition: all linear 0.3s;
+	background: #D9232E;
+}
+.designerteam .btn{
+	height: 45px;
+	width: 100%;
+    position: absolute;
+    top: 68%;
+    left: 0px;
+	margin-top:-22px;
+	cursor: pointer;
+}
+.designerteam .btn .prev{
+	width: 45px;
+	height:45px;
+	float: left;
+	background:url(../images/prev.png) no-repeat center center;
+}
+.designerteam .btn .prev:hover{
+	background:url(../images/prev_h.png) no-repeat center center;
+}
+.designerteam .btn .next{
+	width: 45px;
+	height:45px;
+	background:url(../images/next.png)no-repeat center center;
+	float: right;
+}
+.designerteam .btn .next:hover{
+	background:url(../images/next_h.png)no-repeat center center;
+}
+.desingers .dts_txt{
+	width: 251px;
+	background: #f8f8f8;
+	padding: 24px 0 20px 0px;
+	color: #2b2b2b;
+	text-indent: 20px;
+}
+.dts_txt h4{
+	width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.dts_txt p{
+	width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+.dts_txt:hover{
+	color: #fff;
+	background: #D9232E;
+}
+
+/* 品牌文化 */
+.brandcultures{
+	margin-top: 100px;
+	width: 100%;
+	height: auto;
+	background: #f9f5f5;
+	box-sizing: border-box;
+}
+.brandcultures .bc_left{
+	width: 406px;
+	margin-left: 100px;
+}
+.brandcultures .bc_title{
+	width: 406px;
+	text-align: left;
+}
+.bc_title .bgtitle{
+	text-align: left;
+}
+.bc_title .title{
+	font-size: 36px;
+    width: 100%;
+    color: #000;
+    margin: 10px 0px 20px;
+	text-align: left;
+}
+.brandcultures .bc_txt{
+	width: 406px;
+	overflow: hidden;
+}
+.bc_txt .txt1{
+	height: 72px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #666;
+}
+.bc_txt .txt2{
+	font-size: 14px;
+	line-height: 24px;
+	color: #666;
+	padding-top: 14px;
+}
+.bc_txt .txt3{
+	height: 68px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #666;
+	padding-top: 20px;
+}
+.brandcultures .bc_right{
+	max-width: 618px;
+	margin-right: 80px;
+	padding-top: 20px;
+}
+
+
+/* 页脚 */
+.footer{
+	width: 100%;
+    margin-top: 100px;
+    border-top: 2px solid #000;
+    padding: 38px 0 70px;
+}
+.footer .f_txt{
+	width: 100%;
+    font-size: 14px;
+    color: #666;
+}
+.topfixed{
+	width: 48px;
+    height: 48px;
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    top: 50%;
+    margin-top: -35px;
+    /* display: none; */
+	background: #000;
+	display: none
+}
+.topfixed:hover{
+	background: #d9232e;
+}
+.topfixed img{
+	width: 30px;
+    display: block;
+    margin: 14px auto 0;
+}

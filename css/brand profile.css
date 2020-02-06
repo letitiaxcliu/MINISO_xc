@@ -1,0 +1,354 @@
+body,h1, h2, h3, h4, h5, h6,
+p, dl, dt, dd,ol, ul, li, a,
+img, span,input, textarea,
+select, option{
+	padding: 0;
+	margin: 0;
+}
+ul,ol{
+	list-style: none;
+}
+span{
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float:right;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.clear{
+	zoom: 1;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+	color:black;
+	display: block;
+}
+.container{
+	width:1200px;
+	margin: 0 auto;
+}
+.imgauto{
+    display: block;
+    width: 100%;
+}
+
+/* 头部 */
+.header{
+    width:1200px;
+	/* height: 100px; */
+	background: white;
+    box-sizing: border-box;
+	padding-top: 27px;
+	border-top:4px solid #D9232E ;
+    position: relative;
+}
+.header .nav{
+	position: relative;
+}
+.nav .nav_top{
+	width: 102px;
+	padding-right: 2px;
+}
+.nav_top .language{
+	width: 73px;
+	height: 18px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	line-height: 25px;
+	position: relative;
+}
+.language span{
+	font-size: 12px;
+	color: #666;
+	padding-left: 12px;
+}
+.language img{
+	position: absolute;
+	top: 7px;
+	right: 0px;
+	width: 8px;
+    height: 5px;
+}
+.nav_top .search{
+	margin-top:7px ;
+	cursor: pointer;/* 小手 */
+	width: 12px;
+	height: 13px;
+	background:url(../images/garysearch.png) no-repeat center center;
+	outline: none;/* input点击时,默认的蓝框去除掉 */
+	border: 0;/* 边框去除 */
+}
+.header .nav ul {
+	width: auto;
+	height: 44px;
+    margin-top: 56px;
+}
+.header .nav ul li{ 
+    float: left;
+    margin-right: 53px;
+	padding-bottom: 20px;
+}
+.header .nav ul li:last-child {
+    margin-right: 0;
+}
+.header .nav ul li a{
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+}
+.header .nav .con a{
+	font-size: 16px;
+	color: #d10709;
+}
+.header .nav ul li a:hover{
+	color: #d10709;
+}
+/* .header .nav .con{
+	border-bottom: 3px solid #d10709;
+} */
+.header .nav #nline{
+	display: block;
+	width: 32px;
+	height: 3px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 4;
+	background: #d10709;
+	margin-bottom: 1px;
+}
+.header .nav #hide{
+	position: relative;
+}
+.nav #hide>ol{
+	display: block;
+	width: 172px;
+	float: none;
+    position: absolute;
+    top: 20px;
+    left: -67px;
+	z-index: 4;
+	background: #fff;
+	display: none; 
+}
+.nav #hide:hover>ol{
+	display: block;
+}
+/* .nav .show>ol{
+	display: none;
+}
+.nav .show:hover>ol{
+	display: block;
+} */
+.nav #hide>ol li{
+	width: 172px;
+	height: 19px;
+	overflow: hidden;
+}
+.nav #hide>ol li a{
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	line-height: 42px;
+	display: block;
+	font-size: 14px;
+	color: #333;
+}
+.nav #hide>ol li a:hover{
+	background: #D9232E;
+	color: #fff;
+}
+.nav #hide>ol li:first-child{
+	/* background: blue; */
+	width: 100%;
+	height: 80%;
+}
+
+/* Content */
+
+/* 品牌简介 品牌哲学 */
+.brand_profileBox{
+    width: 100%;
+    padding-bottom:120px;
+}
+.brand_profileBox>.content{
+    margin-top: 32px;
+}
+.content .title{
+    text-align: left;
+    font-family: 微软雅黑;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.bgtitle{
+    font-size: 36px;
+    color: #ddd;
+    font-weight: 500;
+}
+.title>p{
+    font-size: 24px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.bp_txt>p{
+    width: 100%;
+    font-size: 15px;
+    color: #666;
+    text-align: left;
+    margin-top:10px;
+    padding:5px;
+    line-height: 30px;
+}
+.bp_txt p:hover{
+    width: 100%;
+    overflow-x: auto;
+    text-overflow: inherit;
+    overflow: visible;
+    z-index: 999
+}
+
+.brand_philosophyBox{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 60px 0 90px;
+}
+.brand_philosophyBox>.content{
+    margin-top: 32px; 
+}
+
+/*详细介绍 */
+/* logo详细介绍 */
+.branddetailBox{
+    border-top: 1px solid #ccc;
+}
+.branddetailBox>.branddetail{
+    width: 100%;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+.branddetail .item{
+    width: 100%;
+    margin: 40px 0;
+}
+.logpdetail .item .logomg{
+    width: 120px;
+    height: 120px;
+}
+.item .logo_info{
+    width:calc(100% - 160px);
+}
+.item .logo_info>div{
+    width: 100%;
+    font-size: 28px;
+    color: #d9232e;
+    margin-bottom: 10px;
+}
+.item .logo_info>p{
+    max-height: 100px;
+    font-size: 15px;
+    color: #666;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+/* 品牌详细介绍 */
+.item .brand_info{
+    width:calc(100% - 160px);
+}
+.item .brand_info>.bd_title{
+    width: 100%;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.brand_info .infotxt>div span{
+    font-size: 15px;
+	color: #333;
+	display: inline;
+	max-width: 100px;;
+	overflow: hidden;
+}
+.brand_info .infotxt .bd_subtitle{
+	color: #d9232e;
+}
+
+
+/* 页脚 */
+.footer{
+	width: 100%;
+    margin-top: 100px;
+    border-top: 2px solid #000;
+    padding: 38px 0 70px;
+}
+.footer .f_txt{
+	width: 100%;
+    font-size: 14px;
+    color: #666;
+}
+.topfixed{
+	width: 48px;
+    height: 48px;
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    top: 50%;
+    margin-top: -35px;
+    /* display: none; */
+	background: #000;
+	display: none
+}
+.topfixed:hover{
+	background: #d9232e;
+}
+.topfixed img{
+	width: 30px;
+    display: block;
+    margin: 14px auto 0;
+}
+
+.oneTxt{
+    word-break: break-all; 
+display: -webkit-box;
+ -webkit-line-clamp: 1;  
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+}
+
+
+/* 
+overflow:hidden; //超出的文本隐藏
+text-overflow:ellipsis; //溢出用省略号显示
+white-space:nowrap; //溢出不换行
+ */
+
+ /* word-break: break-all; 在恰当的断字点进行换行
+ /* display: -webkit-box;
+ -webkit-line-clamp: 1;  限制在一个块元素显示的文本的行数
+ -webkit-box-orient: vertical;
+ overflow: hidden;  
+ */
+
+ /* .bp_txt>p{
+    word-break: break-all; 
+    display: -webkit-box;
+    -webkit-line-clamp: 1;  
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.bp_txt p:hover{
+    width: 100%;
+    overflow-x: auto;
+    text-overflow: inherit;
+    overflow: visible;
+    z-index: 999;
+} */
